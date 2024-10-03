@@ -7,7 +7,6 @@ services:
     dockerfilePath: ./Dockerfile  # Dockerfileのパス
     autoDeploy: true  # GitHubのプッシュ時に自動デプロイ
     plan: free  # 無料プランを使用
-    healthCheckPath: /  # ヘルスチェック用のパスを指定
     envVars:
       - key: SERVER_PORT
         value: 8080  # 使用するポート（適宜変更）
